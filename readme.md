@@ -1,7 +1,7 @@
 ## svg描边动画
 
 ### svg初了解
-svg中有着基本图形（rect、circle、ellipse、line、polyline、polygon），路径（path），和文本（text等）。这些标签统一包含在一对```<svg></svg>```标签中，其中svg标签需要标记```xmlns```属性来方便文档识别。不同标签有着各自的属性，这里不再赘述，有需要可以直接在[demo](./demo/basic.html)中查看。
+svg中有着基本图形（rect、circle、ellipse、line、polyline、polygon），路径（path），和文本（text等）。这些标签统一包含在一对```<svg></svg>```标签中，其中svg标签需要标记```xmlns```属性来方便文档识别。不同标签有着各自的属性，这里不再赘述，有需要可以直接在[demo](http://htmlpreview.github.io/?https://github.com/fallenleaves409/svg--/blob/master/demo/basic.html)中查看。
 
 ### stroke属性
 stroke属性描述了一个图形的边框的相关属性，以下是几种常用的stroke属性
@@ -62,7 +62,7 @@ stroke-dasharray用来创建虚线，也是svg描边动画中的重要属性，�
 5. storke-dashoffset
 线段的偏移度，可以当做一条直线在可视区域内的平移。类似于下图
 ![stroke-dashoffset](./images/stroke-dashoffset.gif)
-点击这里查看[demo](./demo/stroke-dashoffset.html)
+点击这里查看[demo](http://htmlpreview.github.io/?https://github.com/fallenleaves409/svg--/blob/master/demo/stroke-dashoffset.html)
 
 ### 实现svg描边动画
 除了上面的stroke属性，实现svg描边动画还需要```getTotalLength```和```requestAnimationFrame```。
@@ -79,7 +79,7 @@ stroke-dasharray用来创建虚线，也是svg描边动画中的重要属性，�
 7. 根据实际情况来确定stroke-dashoffset小于0时添加的dom样式。   
 
 以上是使用js执行时的基本步骤，同样的，使用css3的animation来控制动画也是一样的。
-这里是使用[js](./demo/recycle-js.html)和[css3](./demo/recycle-css3.html)简单demo
+这里是使用[js](http://htmlpreview.github.io/?https://github.com/fallenleaves409/svg--/blob/master/demo/recycle-js.html)和[css3](http://htmlpreview.github.io/?https://github.com/fallenleaves409/svg--/blob/master/demo/recycle-css3.html)简单demo
 
 ### svg工具
  * [vectr](https://vectr.com/)：在线svg绘制。[demo]
