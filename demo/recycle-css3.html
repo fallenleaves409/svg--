@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>recycle</title>
+    <style>
+        #path1 {
+            stroke-dasharray: 1200;
+            animation: 5s animate1 infinite;
+        }
+        #path2 {
+            stroke-dasharray: 602.4;
+            animation: 5s animate2 infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                stroke-dashoffset: 1200;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        @keyframes animate2 {
+            0% {
+                stroke-dashoffset: 602.4;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg width="3000" height='1000' xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id='path1' d='M450 200 h300 v300 h-300 Z' fill='#fff'   stroke='#000' stroke-width='1'></path>
+        <path id='path2' fill='#fff' stroke='#000' stroke-width='1' xmlns="http://www.w3.org/2000/svg" d="M623.98 269.9C654.77 269.9 679.73 292.84 679.73 321.13C679.73 322.19 679.7 323.26 679.62 324.3C701.86 328.61 718.21 343.01 718.21 360.13C718.21 360.13 718.21 360.13 718.21 360.13C718.21 380.64 694.74 397.27 665.77 397.27C652.62 397.27 547.38 397.27 534.23 397.27C505.27 397.27 481.79 380.64 481.79 360.13C481.79 360.13 481.79 360.13 481.79 360.13C481.79 342.25 499.63 327.32 523.39 323.79C525.52 304.4 543.34 289.27 565 289.27C569.76 289.27 574.33 290 578.59 291.35C588.72 278.37 605.27 269.9 623.98 269.9Z" id="a2DiCCaU8C"/>
+    </svg>
+</body>
+</html>

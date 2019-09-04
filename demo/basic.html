@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>svg基本图形</title>
+    <style>
+        rect {
+            fill: rgb(255, 0, 0);
+            fill-opacity: .7;
+            stroke: rgb(0, 0, 0);
+            stroke-width: 1;
+        }
+        circle, ellipse{
+            fill: rgb(155, 155, 155);
+            stroke: rgb(0, 0, 0);
+            stroke-width: 1;
+        }
+        line, polyline, polygon{
+            stroke: rgb(0, 0, 0);
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <p>stroke: 边框颜色</p>
+         <p>stroke-width: 边框宽度</p>
+         <p>stroke-opacity: 边框颜色透明度</p>
+         <p>fill: 填充颜色</p>
+         <p>fill-opacity: 填充透明度</p>
+         <p>opacity: 整体透明度</p>
+         <div class="list">
+            <p>1.矩形(rect)属性：x/y(左上角起始点坐标)，width/height(宽/高)，rx/ry(圆角x/y方向上弧度)</p>
+             <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <rect x='1' y='1' width='200' height='200' rx='2' ry='2'>
+            </svg>
+            <p>2.圆形(circle)属性：cx/cy(圆心坐标), r(半径)</p>
+            <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx='100' cy='100' r='99'>
+            </svg>
+            <p>3.椭圆(ellipse)属性：cx/cy(圆心坐标)，rx/ry(长轴/短轴)</p>
+            <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <ellipse cx='100' cy='100' rx='99' ry='50'>
+            </svg>
+            <p>4.线段(line)属性: x1/y1(起点坐标), x2/y2(终点坐标)</p>
+            <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <line x1='2' y1='2' x2='200' y2='2'>
+            </svg>
+            <p>5.折线(polyline)属性：points(点集，表示多个坐标)</p>
+            <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polyline points="0 0,1 4,10 20,70 80,150 190">
+            </svg>
+            <p>6.多边形(polygon)属性：类似polyline，只是最后终点和起始点会连起来</p>
+            <svg width="210" height='210' xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polygon points="1 1,1 80,150 190">
+            </svg>
+            <p>7.路径(path)属性：d(路径指令集包含1.移动/Mx y;2.画线/Lx y;3.水平移动/Hx;4.垂直移动/Vx;5.闭合/Z;6.弧形请查看文档)</p>
+         </div>
+     </div>
+</body>
+</html>
